@@ -1,0 +1,193 @@
+/* Reset some default styles for a cleaner base */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+  }
+  
+  /* Apply global styling */
+  body {
+    font-family: Helvetica, sans-serif
+    Arial, sans-serif;
+    background-color: #CAC0B3;
+    color: #333;
+  }
+  
+  header {
+    background-color: #001233;
+    color: #FF595A;
+    padding: 20px;
+    display: center;
+    justify-content: space-between;
+  }
+  
+  nav h1 {
+    text-align: center;
+    font-size: 24px;
+    
+    
+  }
+
+  
+  nav ul {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding-right: 0;
+    
+  }
+  
+  nav li {
+    margin-right: 70px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FF595A;
+    
+  }
+
+ 
+  
+  .event-info {
+    text-align: right;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .tech-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .tech-intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-intro ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .tech-intro li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001233;
+    color: #FF595A;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 1045px) {
+    nav li::before {
+      content: attr(data-text);
+      
+    }
+    nav li a {
+      display: none; /* Hide the anchor text */
+    }
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  
+
+  @media only screen and (max-width: 823px) {
+    nav li {
+      margin-right: 55px;
+    }
+  }
+
+  @media only screen and (max-width: 773px) {
+    nav li {
+      margin-right: 45px;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    nav li {
+      margin-right: 37px;
+    }
+  }
+
+  @media only screen and (max-width: 638px) {
+    nav li {
+      margin-right: 33px;
+    }
+  }
+
+  @media only screen and (max-width: 589px) {
+    nav li {
+      margin-right: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 547px) {
+    nav li {
+      margin-right: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 501px) {
+    nav li {
+      margin-right: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 501px) {
+    nav li {
+      margin-right: 15px;
+    }
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 470px) {
+      nav li {
+        margin-right: 10px;
+      }
+    }
+
+
+
+    @media only screen and (max-width: 440px) {
+      nav li {
+        margin-right: 5px;
+      }
+    }
+  
+
+  
+    
+  
+  
+  
+      
+
+
+  
+  
+  
