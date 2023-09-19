@@ -7,20 +7,23 @@ body, h1, h2, p, ul, li {
     /* Styles for smaller screens */
   }
   
+  
   /* Apply global styling */
   body {
-    font-family: Helvetica, sans-serif
-    Arial, sans-serif;
-    background-color: #CAC0B3;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #05245e;
+
   }
   
   header {
-    background-color: #001233;
-    color: #FF595A;
+    background-color: #ffffff;
+    color: #05245e;
     padding: 20px;
     display: center;
     justify-content: space-between;
+    width: 100%;
+    border-bottom: 1.5px solid #05245e;
   }
   
   nav h1 {
@@ -38,15 +41,16 @@ body, h1, h2, p, ul, li {
     justify-content:center;
     padding-right: 0;
     
+    
   }
   
   nav li {
-    margin-right: 70px;
+    margin-right: 105px;
   }
   
   nav a {
     text-decoration: none;
-    color: #FF595A;
+    color: #05245e;
     
   }
 
@@ -57,18 +61,29 @@ body, h1, h2, p, ul, li {
   }
   
   main {
-    padding: 40px;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: left;
   }
+
   
+
+
   .tech-intro {
-    max-width: 800px;
     margin: 0 auto;
     text-align: center;
   }
   
   .tech-intro h2 {
-    font-size: 32px;
+  font-size: 65px;
+    position: relative;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #000;
     margin-bottom: 20px;
+    text-align: left;
+    position: left;
+
   }
   
   .tech-intro ul {
@@ -83,35 +98,40 @@ body, h1, h2, p, ul, li {
   
   footer {
     text-align: center;
-    padding: 20px;
+    padding: 8px;
     background-color: #001233;
-    color: #FF595A;
-    position: absolute;
+    color: #a3a3a3;
     bottom: 0;
     width: 100%;
     
   }
 
 
-  
-  
-  
-  
-  
-  @media only screen and (max-width: 1045px) {
-    nav li::before {
-      content: attr(data-text);
-      
+  @media only screen and (max-width: 1103px) {
+    nav li {
+      margin-right: 85px;
     }
-    nav li a {
-      display: none; /* Hide the anchor text */
-    }
-    body {
-      background-color: lightblue;
+  }
+  
+  
+  @media only screen and (max-width: 1087px) {
+    nav li {
+      margin-right: 80px;
     }
   }
 
+  @media only screen and (max-width: 1005px) {
+    nav li {
+      margin-right: 75px;
+    }
+  }
   
+
+  @media only screen and (max-width: 923px) {
+    nav li {
+      margin-right: 70px;
+    }
+  }
 
   @media only screen and (max-width: 823px) {
     nav li {
@@ -155,39 +175,54 @@ body, h1, h2, p, ul, li {
     }
   }
 
-  @media only screen and (max-width: 501px) {
+  @media only screen and (max-width: 451px) {
     nav li {
-      margin-right: 15px;
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 421px) {
+    nav li {
+      margin-right: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 391px) {
+    nav li {
+      margin-right: 4px;
     }
   }
   
-  
-  
-  
-  
-  @media only screen and (max-width: 470px) {
-      nav li {
-        margin-right: 10px;
-      }
+  @media only screen and (max-width: 385px) {
+    nav li {
+      margin-right: 3px;
     }
+  }
 
-
-
-    @media only screen and (max-width: 440px) {
-      nav li {
-        margin-right: 5px;
-      }
+  @media only screen and (max-width: 379px) {
+    nav li {
+      margin-right: 2px;
     }
+  }
+
+  @media only screen and (max-width: 373px) {
+    nav li {
+      margin-right: 1px;
+    }
+  }
+
+  @media only screen and (max-width: 366px) {
+    nav li {
+      margin-right: 0px;
+    }
+  }
+
   
 
   
-    
   
-  
-  
-      
 
 
-  
-  
+
+
   
