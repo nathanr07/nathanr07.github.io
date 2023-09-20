@@ -11,6 +11,7 @@
     <nav>
       <h1></h1>
       <ul> 
+        <li><a href="index.html">Home</a></li>
         <li><a href="food.html">Food</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#fashion">Fashion</a></li>
@@ -23,10 +24,10 @@
   </header>
 
   <main>
+    <h2>Digital Showcase of<br>Tech Creations</h2>
     <section class="tech-intro">
-       
-    
-      <h2>Digital Showcase of<br>Tech Creations</h2>
+      <div class="content">
+
       <p> 
         <br>Welcome to the Digital Showcase of Tech Creations! 
         Join us to experience the amazing works in various tech 
@@ -34,22 +35,33 @@
         departments: Food, Product, Fashion, Design and Visual 
         Communication, Animations and Digital Science. Come have a 
         look at some of the work that your children, friends or family have been 
-        working on for the past year. </p>
-
-
-        <div class="image-slider">
-          <div class="arrow arrow-left">&#9664;</div>
-          <div class="images">
-            <!-- Add your image elements here -->
-            <img src="https://cdn.broadsheet.com.au/cache/93/0e/930e447b81b44133afb6b49e33f9bb86.jpg" alt="Image 1">
-            <img src="https://www.nzherald.co.nz/resizer/njC9cZNWgG3iHwCHXv3xntj7in4=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/ZQYVLPNY6JB5UYRXN3IQPVOCSQ.jpg" alt="Image 2">
-            <img src="https://neatplaces.co.nz/cdn-cgi/image/height=444,format=auto,width=665,fit=cover//media/uploads/guides/guide/5_auckland_streets_to_eat_around_the_world/Peachs_Hot_Chicken_Auckland.jpg" alt="Image 3">
-            <!-- Add more images as needed -->
-          </div>
-          <div class="arrow arrow-right">&#9654;</div>
-        </div>
-
+        working on for the past year. 
+      </p>
       
+      
+      <div>
+        
+        <section class="image-slider">
+          <div class="slider-container">
+      
+          <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8f692a72-c1d6-405b-a02c-92d60a6adb5e%2FIMG_0179.jpg?table=block&id=a238298b-4dba-4048-9a24-d6348f740b7f&spaceId=b8e2ec81-0e6d-44f1-bf1a-5efe40bcc548&width=2000&userId=bfab90b5-760f-44c5-a0e6-ec0b3e7d51b3&cache=v2" alt="Image 1">
+          <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd6db1583-a9ca-49ab-944c-3c78cab75fc8%2FIMG_0182.jpg?table=block&id=899b0a84-0cfa-486a-a07d-3796fa141b2d&spaceId=b8e2ec81-0e6d-44f1-bf1a-5efe40bcc548&width=2000&userId=bfab90b5-760f-44c5-a0e6-ec0b3e7d51b3&cache=v2" alt="">
+          <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fba742940-226d-4a77-b2a7-ddd5d366d4f1%2FIMG_0188.jpg?table=block&id=c8bc87c7-15be-426b-9e79-06286ea70b16&spaceId=b8e2ec81-0e6d-44f1-bf1a-5efe40bcc548&width=2000&userId=bfab90b5-760f-44c5-a0e6-ec0b3e7d51b3&cache=v2" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+      
+
+    </div>
+    <div class="nav-arrows">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+  </section>
+        
         
           
    
@@ -65,30 +77,34 @@
 
  
   
-  
   <script>
-    const imagesContainer = document.querySelector('.images');
-    const leftArrow = document.querySelector('.arrow-left');
-    const rightArrow = document.querySelector('.arrow-right');
-    const imageWidth = imagesContainer.clientWidth;
-    const totalImages = imagesContainer.children.length;
-    let currentIndex = 0;
+    const images = document.querySelectorAll('.slider-container img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentImageIndex = 0;
   
-    rightArrow.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % totalImages;
-      updateSliderPosition();
-    });
-  
-    leftArrow.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      updateSliderPosition();
-    });
-  
-    function updateSliderPosition() {
-      const offsetX = -currentIndex * imageWidth;
-      imagesContainer.style.transform = `translateX(${offsetX}px)`;
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.style.display = i === index ? 'block' : 'none';
+      });
     }
+  
+    prevBtn.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      showImage(currentImageIndex);
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      showImage(currentImageIndex);
+    });
+  
+    // Initial display of the first image
+    showImage(currentImageIndex);
   </script>
   
+  
+  
+   
 </body>
 </html>
