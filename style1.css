@@ -19,39 +19,67 @@ body, h1, h2, p, ul, li {
   header {
     background-color: #ffffff;
     color: #000000;
-    padding: 20px;
+    
+    height: 80px;
     display: center;
     justify-content: space-between;
     width: 100%;
     border-bottom: 1.5px solid #000104;
+    
   }
   
   nav h1 {
     text-align: center;
     font-size: px;
-    
+    width: 100%;
     
   }
 
+  .home {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right:-20px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+  }
+
+
+  .line {
+    flex-grow: 1; /* Allows the line to grow and cover the entire space */
+    border-top: 1px solid #000000; /* Adjust the color and thickness as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
+    
+    border-top: 2px solid #000000; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the margin as needed */
+    width: 100%;
+  }
+
+
+
+
+    
   
   nav ul {
     list-style: none;
     display:flex;
     align-items: center;
     justify-content:center;
-    padding-right: 0;
     
+    width: 100%;
     
   }
   
   nav li {
-    margin-right: 105px;
+    margin-right: 115px;
     
   }
   
   nav a {
     text-decoration: none;
     color: #000000;
+    width: 100%;
     
   }
 
@@ -65,15 +93,19 @@ body, h1, h2, p, ul, li {
     padding-left: 20px;
     padding-top: 30px;
     text-align: left;
+
   }
 
   
 
 
   .tech-intro {
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    align-items: flex-start;
+    
   }
   
    main h2 {
@@ -88,6 +120,42 @@ body, h1, h2, p, ul, li {
 
   }
 
+
+  
+  
+  .tech-intro .content:first-child p {
+    font-size: 16px;
+    width: 80%;
+    margin: 5px 0px;
+    }
+
+  
+  
+  .tech-intro p {
+    width: 90%;
+    margin: 60px 0px;
+    
+
+  }
+
+
+   
+    
+
+
+  .content {
+    flex: 1;
+    margin: 0 10px;
+    max-width: calc(50% - 20px);
+    box-sizing: border-box; 
+    font-size: px;
+  }
+
+  .content p {
+    margin-bottom: 20px;
+  }
+
+  
   
   
 
@@ -103,6 +171,7 @@ body, h1, h2, p, ul, li {
   position: relative;
   width: 47%;
   margin-right: 100px;
+  margin: px px;
 }
 
 .slider-container {
@@ -153,7 +222,14 @@ button.next:hover {
 
   
   
-  
+@media screen and (max-width: 621px) {
+  .tech-intro {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+  .content {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
   
   
  
@@ -161,9 +237,7 @@ button.next:hover {
   
   
 
-  .tech-intro p {
-    margin-right: 50%
-  }
+  
 
 
   
@@ -185,6 +259,7 @@ button.next:hover {
     bottom: 0;
     width: 100%;
     border-top: 0.7px solid #ffffff;
+    margin-top: 1000px;
     
   }
 
@@ -202,44 +277,114 @@ button.next:hover {
       width: 100%;
     }
   }
+  @media only screen and (max-width: 621px) {
+    .con {
+      width: 100%;
+    }
+  }
+
+ 
+
+
+   
+
+      
 
 
 
   /* Add this CSS at the end of your existing CSS file */
 @media screen and (max-width: 1200px) {
   nav li {
-    margin-right: 10%; /* Adjust this value as needed */
+    margin-right: 9%; /* Adjust this value as needed */
   }
 }
 
 @media screen and (max-width: 1100px) {
   nav li {
-    margin-right: 9%; /* Adjust this value as needed */
+    margin-right: 8%; /* Adjust this value as needed */
   }
 }
 
 @media screen and (max-width: 1000px) {
   nav li {
-    margin-right: 8%; /* Adjust this value as needed */
+    margin-right: 7%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav li {
+    margin-right: 6%; /* Adjust this value as needed */
   }
 }
 
 
-
-/* For screens below a certain width where you want minimal gap */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 679px) {
   nav li {
     margin-right: 5%; /* Adjust this value as needed */
   }
 }
 
-@media screen and (max-width: 562px) {
+@media screen and (max-width: 596px) {
+  nav li {
+    margin-right: 4%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 502px) {
+  nav li {
+    margin-right: 3%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 462px) {
+  nav li {
+    margin-right: 2%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav li {
+    margin-right: 1%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 392px) {
+  nav li {
+    margin-right: 0.5%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 371px) {
+  nav li {
+    margin-right: 0.25%; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width: 366px) {
+  nav li {
+    margin-right: 0.01%; /* Adjust this value as needed */
+  }
+}
+
+
+
+
+
+
+/* For screens below a certain width where you want minimal gap */
+@media screen and (max-width: px) {
+  nav li {
+    margin-right: %; /* Adjust this value as needed */
+  }
+}
+
+@media screen and (max-width:px) {
   nav li {
     margin-right: 1px; /* Adjust this value as needed */
   }
 }
 
-@media only screen and (max-width: 563px) {
+@media only screen and (max-width: px) {
   nav li {
     margin-right: 1px;
   }
@@ -251,181 +396,4 @@ nav li {
 }
 
 
-  @media only screen and (max-width: 1196px) {
-    nav li {
-      margin-right: 85px;
-    }
-  }
-  
-  @media only screen and (max-width: 1069px) {
-    nav li {
-      margin-right: 80px;
-    }
-  }
-
-  @media only screen and (max-width: 983px) {
-    nav li {
-      margin-right: 70px;
-    }
-  }
-
-  @media only screen and (max-width: 907px) {
-    nav li {
-      margin-right: 60px;
-    }
-  }
-  
-  @media only screen and (max-width: 825px) {
-    nav li {
-      margin-right: 50px;
-    }
-  }
-
-  @media only screen and (max-width: 758px) {
-    nav li {
-      margin-right: 35px;
-    }
-  }
-
-  @media only screen and (max-width: 671px) {
-    nav li {
-      margin-right: 25px;
-    }
-  }
-
-  @media only screen and (max-width: 570px) {
-    nav li {
-      margin-right: px;
-    }
-  }
-  
-  
-  
-  
-  127
-  
-  
-  
-  
-  
-  
-  
-  @med ia only screen and (max-width: 1103px) {
-    nav li {
-      margin-right: 90px;
-    }
-  }
-  
-  
-  @m edia only screen and (max-width: 1087px) {
-    nav li {
-      margin-right: 80px;
-    }
-  }
-
-  @me dia only screen and (max-width: 1005px) {
-    nav li {
-      margin-right: 75px;
-    }
-  }
-  
-
-  @me dia only screen and (max-width: 923px) {
-    nav li {
-      margin-right: 70px;
-    }
-  }
-
-  @med ia only screen and (max-width: 823px) {
-    nav li {
-      margin-right: 55px;
-    }
-  }
-
-  @me dia only screen and (max-width: 773px) {
-    nav li {
-      margin-right: 45px;
-    }
-  }
-  
-  @med ia only screen and (max-width: 680px) {
-    nav li {
-      margin-right: 37px;
-    }
-  }
-
-  @me dia only screen and (max-width: 638px) {
-    nav li {
-      margin-right: 33px;
-    }
-  }
-
-  @med ia only screen and (max-width: 589px) {
-    nav li {
-      margin-right: 27px;
-    }
-  }
-
-  @m edia only screen and (max-width: 547px) {
-    nav li {
-      margin-right: 20px;
-    }
-  }
-
-  @med ia only screen and (max-width: 501px) {
-    nav li {
-      margin-right: 15px;
-    }
-  }
-
-  @med ia only screen and (max-width: 451px) {
-    nav li {
-      margin-right: 10px;
-    }
-  }
-
-  @med ia only screen and (max-width: 421px) {
-    nav li {
-      margin-right: 5px;
-    }
-  }
-
-  @med ia only screen and (max-width: 391px) {
-    nav li {
-      margin-right: 4px;
-    }
-  }
-  
-  @med ia only screen and (max-width: 385px) {
-    nav li {
-      margin-right: 3px;
-    }
-  }
-
-  @me dia only screen and (max-width: 379px) {
-    nav li {
-      margin-right: 2px;
-    }
-  }
  
-  @med ia only screen and (max-width: 373px) {
-    nav li {
-      margin-right: 1px;
-    }
-  }
-
-  @me dia only screen and (max-width: 366px) {
-    nav li {
-      margin-right: 0px;
-    }
-  }
-
-  
-
-  
-  
-
-
-
-
-  
