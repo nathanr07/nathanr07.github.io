@@ -26,23 +26,69 @@
     <section class="tech-intro">
        
     
-      <h2>Digital Showcase of<br> Tech Creations</h2>
-      <p>Welcome to the Digital Showcase of Tech Creations! Join us to experience the amazing works in various tech departments at saint kentigern college:</p>
-      <ul>
+      <h2>Digital Showcase of<br>Tech Creations</h2>
+      <p> 
+        <br>Welcome to the Digital Showcase of Tech Creations! 
+        Join us to experience the amazing works in various tech 
+        departments at Saint Kentigern college. With 6 different 
+        departments: Food, Product, Fashion, Design and Visual 
+        Communication, Animations and Digital Science. Come have a 
+        look at some of the work that your children, friends or family have been 
+        working on for the past year. </p>
 
-        <li>Food</li>
-        <li>Product</li>
-        <li>Fashion</li>
-        <li>DVC</li>
-        <li>Animations</li>
-        <li>Digital Science</li>
+
+        <div class="image-slider">
+          <div class="arrow arrow-left">&#9664;</div>
+          <div class="images">
+            <!-- Add your image elements here -->
+            <img src="https://cdn.broadsheet.com.au/cache/93/0e/930e447b81b44133afb6b49e33f9bb86.jpg" alt="Image 1">
+            <img src="https://www.nzherald.co.nz/resizer/njC9cZNWgG3iHwCHXv3xntj7in4=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/ZQYVLPNY6JB5UYRXN3IQPVOCSQ.jpg" alt="Image 2">
+            <img src="https://neatplaces.co.nz/cdn-cgi/image/height=444,format=auto,width=665,fit=cover//media/uploads/guides/guide/5_auckland_streets_to_eat_around_the_world/Peachs_Hot_Chicken_Auckland.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+          </div>
+          <div class="arrow arrow-right">&#9654;</div>
+        </div>
+
+      
+        
+          
+   
+        
+        <br><br><br><br><br><br><br><br>
       </ul>
-      <p>Discover how technology is shaping the future and revolutionizing these fields <br> ddda <br> n.<br> v <br> v <br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br><br><br><br><br>v<br><br><br><br>v</p>
+      <p></b>Discover how technology is shaping the future and revolutionizing these fields <br> ddda <br> n.<br> v <br> v <br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br>v<br><br><br><br><br>v<br><br><br><br>v</p>
     </section>
   </main>
   <footer>
     <p>&copy; 2023 Digital Showcase of Tech Creations</p>
   </footer>
+
+ 
+  
+  
+  <script>
+    const imagesContainer = document.querySelector('.images');
+    const leftArrow = document.querySelector('.arrow-left');
+    const rightArrow = document.querySelector('.arrow-right');
+    const imageWidth = imagesContainer.clientWidth;
+    const totalImages = imagesContainer.children.length;
+    let currentIndex = 0;
+  
+    rightArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalImages;
+      updateSliderPosition();
+    });
+  
+    leftArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+      updateSliderPosition();
+    });
+  
+    function updateSliderPosition() {
+      const offsetX = -currentIndex * imageWidth;
+      imagesContainer.style.transform = `translateX(${offsetX}px)`;
+    }
+  </script>
   
 </body>
 </html>
