@@ -25,7 +25,7 @@ body {
 
  .bodyproduct {
   font-family: 'Poppins', sans-serif;
-  background-color: #D19B66;
+  background-color: #d19151;
   color: #ffffff;
   overflow-x: hidden;
  }
@@ -76,6 +76,16 @@ nav h1 {
   
 }
 
+
+
+.bodydigitaltech main h2 {
+font-size: 90px;
+
+}
+
+.container .title {
+  font-size: 60px;
+}
 
 
 
@@ -325,7 +335,7 @@ position: relative;
 overflow: hidden;
 padding-bottom: 70%; /* 16:9 aspect ratio */
 max-height: 400px;
-margin-top: 100px;
+margin-top: 300px;
 
 }
 
@@ -677,6 +687,13 @@ nav li {
   }
 }
 
+@media only screen and (max-width: 1315px) {
+  .image-slider2 {
+    margin-top: -540px;
+  }
+
+}
+
 @media only screen and (max-width: 683px) {
   .image-slider, .image-slider2 {
     width: 90%;
@@ -690,7 +707,7 @@ nav li {
 @media only screen and (max-width: 683px) {
   .image-slider2 {
     width: 90%;
-    margin: -200px 20px;
+    margin: -390px 20px;
   }
 
 }
@@ -730,7 +747,17 @@ nav li {
 
 
 
+@media only screen and (max-width: 512px) {
+  .bodydigitaltech main h2 {
+    font-size: 65px;
+  }
+}
 
+@media only screen and (max-width: 394px) {
+  .bodydigitaltech main h2 {
+    font-size: 50px;
+  }
+}
 
 
 /* ↓ headear ↓ */
