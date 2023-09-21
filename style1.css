@@ -11,7 +11,10 @@ body, h1, h2, p, ul, li {
     
 
   }
-  
+
+   /* ^ header ^ */
+
+  /* ↓ header ↓ */
   header {
     background-color: #ffffff;
     color: #000000;
@@ -79,6 +82,7 @@ body, h1, h2, p, ul, li {
   }
 
  
+  /* ^ header ^ */
   
   .event-info {
     text-align: right;
@@ -101,13 +105,14 @@ body, h1, h2, p, ul, li {
     justify-content: space-between;
     align-items: flex-start;
     
+    
   }
   
    main h2 {
     font-size: 75px;
     position: relative;
     z-index: 2;
-    -webkit-t ext-fill-color: transparent;
+    -webkit-t-text-fill-color: transparent;
     -webkit-text-stroke: 2.75px #ffffff;
     margin-bottom: 20px;
     text-align: left;
@@ -116,19 +121,87 @@ body, h1, h2, p, ul, li {
   }
 
 
-  .content a {
-    margin: -30px 49px;
-   font-weight: bold;
-   font-size: 50px;
-   z-index: 2;
+  /* ↓ text container ↓ */
+
+  .text-container {  /* Technology Exhibition */
+    text-align: center; /* Align the text to the right */
+    font-weight: bold;
+    font-size: 65px; /* Adjust the font size as needed */
+    position: relative;
+    z-index: 2;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.4px #ffffff;
+    margin-right: 40px;
+    margin-top: -170px;
+    margin-right: -10px;
   }
-  
-  .tech-intro .content:first-child p {
+
+  .text-container p {
+    margin: 0px; /* Remove default margin to avoid extra space */
+    margin-bottom: 100px; 
+    
+    
+  }
+
+
+
+  .text-container .technology {
+    margin-right: px; /* Adjust the margin to increase or decrease the gap */
+    
+  }
+
+
+
+  .tech-exhibition {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: bold;
     font-size: 16px;
-    width: 80%;
-    margin: 60px 0px;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.4px #ff0000;
+    width: 50%; /* Adjust the width as needed */
+  }
+
+  .tech-exhibition p {
+    margin: 100px 100px;
+    
+  }
+
+  .tech-intro .content { /* Second Paragraph */
+    flex: 1;
+    margin: 0 px;
+    box-sizing: border-box;
+    font-size: 16px; /* Adjust font size for content */
+    width: 200%;
+  }
+
+  .tech-intro p {
+    width: 100%; /* Make the paragraphs full-width */
+    margin: px 0;
+    
+  }
+
+
+
+
+
+
+
+
+
+    
+  
+
+  
+  
+  
+  
+  .tech-intro .content:first-child p { /* First paragraph */
+    font-size: 16px;
+    width: 100%;
+    margin: 30px 0px;
     }
 
   
@@ -136,8 +209,6 @@ body, h1, h2, p, ul, li {
   .tech-intro p {
     width: 90%;
     margin: 15px 20px;
-    
-
   }
 
 
@@ -156,7 +227,7 @@ body, h1, h2, p, ul, li {
   }
 
   .content p {
-    margin-bottom: 20px;
+    margin-bottom: -10px;
   }
 
   
@@ -165,7 +236,7 @@ body, h1, h2, p, ul, li {
 
 
 
-
+/* ↓ Image slider ↓ */
   
 
  
@@ -174,8 +245,9 @@ body, h1, h2, p, ul, li {
   margin-top: 100px;
   position: relative;
   width: 47%;
+  size: f;
   margin-right: 100px;
-  margin: px px;
+  margin: -260px 0px;
 }
 
 .slider-container {
@@ -185,7 +257,6 @@ body, h1, h2, p, ul, li {
   overflow: hidden;
   position: relative;
   max-height: px; 
-  margin-right: ;
 }
 
 .slider-container img {
@@ -226,14 +297,7 @@ button.next:hover {
 
   
   
-@media screen and (max-width: 621px) {
-  .tech-intro {
-    flex-direction: column; 
-  }
-  .content {
-    max-width: 100%; 
-  }
-}
+/* ^ Image slider ^ */
   
   
  
@@ -263,121 +327,207 @@ button.next:hover {
     bottom: 0;
     width: 100%;
     border-top: 0.7px solid #ffffff;
-    margin-top: 1000px;
+    margin-top: 500px;
     
   }
 
 
+  nav li {
+    transition: margin-right 0.3s ease-in-out; 
+  }
 
 
 
+/* ↓ text container ↓ */
 
-
-
-
-
-
-
-
-  @media only screen and (max-width: 621px) {
-    .tech-intro p {
-      width: 100%;
+  @media only screen and (max-width: 1315px) {
+    .text-container {
+      margin-top: -20px;
+      font-size: 60px;
     }
   }
 
-  @media only screen and (max-width: 621px) {
+  
+
+
+  @media only screen and (max-width: 1120px) {
+    .text-container {
+      margin-top: -20px;
+      font-size: 50px;
+    }
+  }
+
+
+  @media only screen and (max-width: 916px) {
+    .text-container {
+      margin-top: -20px;
+      font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 683px) {
+    .text-container {
+      width: 100%;
+      font-size: 60px ; /* Adjust the font size for smaller screens */
+      margin-left: -18px;
+    }
+  }
+
+  
+
+  @media only screen and (max-width: 507px) {
+    .text-container {
+      width: 100%;
+      font-size: 50px; /* Adjust the font size for smaller screens */
+      margin-left: -18px;
+    }
+  }
+
+  @media only screen and (max-width: 406px) {
+    .text-container {
+      width: 100%;
+      font-size: 40px ; /* Adjust the font size for smaller screens */
+      margin-left: -18px;
+    }
+  }
+
+
+/* ^ text container ^ */
+
+/* ↓ image slider ↓ */
+
+
+
+  @media only screen and (max-width: 1315px) {
     .image-slider {
-      width: 100%;
-    }
- 
-    .con {
-      width: 100%;
+      margin-top: -400px;
+      font-size: 50px;
     }
   }
+
+  @media only screen and (max-width: 683px) {
+    .image-slider {
+      width: 90%;
+      margin-left: 24px;
+      margin-right: -px;
+      margin-top: 75px;
+    }
  
-@media screen and (max-width: 1200px) {
-  nav li {
-    margin-right: 9%; 
   }
-}
 
-@media screen and (max-width: 1100px) {
-  nav li {
-    margin-right: 8%; 
+
+   /* ^ image slider ^ */
+  
+  
+  
+  
+  /* ↓ text intro/s ↓ */
+  
+  @media screen and (max-width: 683px) {
+    .tech-intro {
+      flex-direction: column; 
+    }
+    .content {
+      max-width: 100%; 
+    }
   }
-}
 
-@media screen and (max-width: 1000px) {
-  nav li {
-    margin-right: 7%; 
+
+  @media only screen and (max-width: 683px) {
+    .tech-intro .content:first-child p {
+      width: 95%;
+    }
   }
-}
 
-@media screen and (max-width: 850px) {
-  nav li {
-    margin-right: 6%; 
+  @media only screen and (max-width: 683px) {
+    .tech-intro .content  {
+      width: 200%;
+    }
   }
-}
 
 
-@media screen and (max-width: 679px) {
-  nav li {
-    margin-right: 5%; 
+ /* ^ techintro/s ^ */
+
+
+
+
+
+
+/* ↓ headear ↓ */
+
+
+  @media screen and (max-width: 1200px) {
+    nav li {
+      margin-right: 9%; 
+    }
   }
-}
-
-@media screen and (max-width: 596px) {
-  nav li {
-    margin-right: 4%; 
+  
+  @media screen and (max-width: 1100px) {
+    nav li {
+      margin-right: 8%; 
+    }
   }
-}
-
-@media screen and (max-width: 502px) {
-  nav li {
-    margin-right: 3%; 
+  
+  @media screen and (max-width: 1000px) {
+    nav li {
+      margin-right: 7%; 
+    }
   }
-}
-
-@media screen and (max-width: 462px) {
-  nav li {
-    margin-right: 2%; 
+  
+  @media screen and (max-width: 850px) {
+    nav li {
+      margin-right: 6%; 
+    }
   }
-}
-
-@media screen and (max-width: 425px) {
-  nav li {
-    margin-right: 1%; 
+  
+  
+  @media screen and (max-width: 679px) {
+    nav li {
+      margin-right: 5%; 
+    }
   }
-}
-
-@media screen and (max-width: 392px) {
-  nav li {
-    margin-right: 0.5%; 
+  
+  @media screen and (max-width: 596px) {
+    nav li {
+      margin-right: 4%; 
+    }
   }
-}
-
-@media screen and (max-width: 371px) {
-  nav li {
-    margin-right: 0.25%; 
+  
+  @media screen and (max-width: 502px) {
+    nav li {
+      margin-right: 3%; 
+    }
   }
-}
-
-@media screen and (max-width: 366px) {
-  nav li {
-    margin-right: 0.01%; 
+  
+  @media screen and (max-width: 462px) {
+    nav li {
+      margin-right: 2%; 
+    }
   }
-}
-
-
-nav li {
-  transition: margin-right 0.3s ease-in-out; 
-}
-
-
-
-@media screen and (max-width: 768px) {
-}
-
-
-
- 
+  
+  @media screen and (max-width: 425px) {
+    nav li {
+      margin-right: 1%; 
+    }
+  }
+  
+  @media screen and (max-width: 392px) {
+    nav li {
+      margin-right: 0.5%; 
+    }
+  }
+  
+  @media screen and (max-width: 371px) {
+    nav li {
+      margin-right: 0.25%; 
+    }
+  }
+  
+  @media screen and (max-width: 366px) {
+    nav li {
+      margin-right: 0.01%; 
+    }
+  }
+  
+   /* ^ header ^ */
+  
